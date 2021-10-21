@@ -15,7 +15,7 @@ SRC_URI = "http://source.mynonpublic.com/broadmedia/g300-dvbc-blindscan-1.0.zip"
 PV = "1.0"
 PR = "r0"
 
-S = "${WORKDIR}/"
+S = "${WORKDIR}"
 
 do_compile() {
 }

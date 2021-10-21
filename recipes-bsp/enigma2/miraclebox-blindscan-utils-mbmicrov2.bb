@@ -15,7 +15,7 @@ SRC_URI = "file://ceryon-tda1002x file://ceryon_blindscan"
 PV = "1.0"
 PR = "r1"
 
-S = "${WORKDIR}/"
+S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}/${bindir}/
