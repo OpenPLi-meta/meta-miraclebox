@@ -1,6 +1,6 @@
-From 05a1328f10d503e2b3156226cef36b0d0c4df7b2 Mon Sep 17 00:00:00 2001
+From 3feff077458979c60cef5f0705b839830afb4c3d Mon Sep 17 00:00:00 2001
 From: Nicker <nickersk@gmail.com>
-Date: Mon, 23 Jul 2018 14:53:12 +0200
+Date: Wed, 25 Jul 2018 15:57:19 +0200
 Subject: [PATCH 2/2] log2 give up on gcc constant optimizations
 
 
