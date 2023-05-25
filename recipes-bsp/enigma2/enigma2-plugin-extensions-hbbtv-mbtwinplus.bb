@@ -26,5 +26,5 @@ S="${WORKDIR}/usr"
 
 do_install() {
 	install -d ${D}/usr
-	cp -a ${S}/* ${D}/usr/
+	cp -a --no-preserve=ownership ${S}/* ${D}/usr/
 }
