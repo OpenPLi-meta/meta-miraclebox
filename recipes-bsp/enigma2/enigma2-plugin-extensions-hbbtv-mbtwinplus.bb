@@ -4,7 +4,7 @@ LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-RDEPENDS_${PN} += "libjpeg-turbo"
+RDEPENDS:${PN} += "libjpeg-turbo"
 
 SRC_URI = "file://enigma2-plugin-extensions-hbbtv-miraclebox.tar.gz"
 
@@ -14,13 +14,13 @@ PR = "r1"
 
 SRCREV = "${AUTOREV}"
 
-FILES_${PN} = "/usr"
+FILES:${PN} = "/usr"
 
 INHIBIT_PACKAGE_STRIP = "1"
 
 INSANE_SKIP += "file-rdeps"
 
-ALLOW_EMPTY_${PN} = "1"
+ALLOW_EMPTY:${PN} = "1"
 
 S="${WORKDIR}/usr"
 
