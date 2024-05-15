@@ -35,7 +35,6 @@ SRC_URI += "http://source.mynonpublic.com/broadmedia/broadmedia-linux-${PV}-${SR
     file://0015-staging-media-mn88472-simplify-NULL-tests.patch \
     file://0016-mn88472-fix-typo.patch \
     file://0017-mn88472-finalize-driver.patch \
-    file://kernel-add-support-for-gcc6.patch \
     file://0001-Support-TBS-USB-drivers-for-4.1-kernel.patch \
     file://0001-TBS-fixes-for-4.1-kernel.patch \
     file://0001-STV-Add-PLS-support.patch \
