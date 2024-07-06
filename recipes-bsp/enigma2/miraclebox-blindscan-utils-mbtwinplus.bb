@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 LICENSE = "CLOSED"
 
 PROVIDES += "virtual/blindscan-dvbc"
-RPROVIDES:${PN} += "virtual/blindscan-dvbc"
+RPROVIDES:${PN} += "virtual-blindscan-dvbc"
 RDEPENDS:${PN} += "libxml2"
 
 SRC_URI = "http://source.mynonpublic.com/broadmedia/g300-dvbc-blindscan-1.0.zip"

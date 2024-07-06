@@ -6,8 +6,8 @@ LICENSE = "CLOSED"
 PACKAGES = "miraclebox-blindscan-dvbs-utils-${MACHINE} miraclebox-blindscan-dvbc-utils-${MACHINE}"
 
 PROVIDES += "virtual/blindscan-dvbs virtual/blindscan-dvbc"
-RPROVIDES:miraclebox-blindscan-dvbs-utils-${MACHINE} += "virtual/blindscan-dvbs"
-RPROVIDES:miraclebox-blindscan-dvbc-utils-${MACHINE} += "virtual/blindscan-dvbc"
+RPROVIDES:miraclebox-blindscan-dvbs-utils-${MACHINE} += "virtual-blindscan-dvbs"
+RPROVIDES:miraclebox-blindscan-dvbc-utils-${MACHINE} += "virtual-blindscan-dvbc"
 RDEPENDS:miraclebox-blindscan-dvbc-utils-${MACHINE} += "libxml2"
 
 SRC_URI = "file://ceryon-tda1002x file://ceryon_blindscan"
