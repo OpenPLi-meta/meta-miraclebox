@@ -3,7 +3,7 @@ SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
 
-PACKAGES = "miraclebox-blindscan-dvbs-utils-${MACHINE} miraclebox-blindscan-dvbc-utils-${MACHINE}"
+PACKAGES = "miraclebox-blindscan-dvbs-utils-${MACHINE} miraclebox-blindscan-dvbc-utils-${MACHINE} miraclebox-blindscan-dvbs-utils-${MACHINE}-dbg miraclebox-blindscan-dvbc-utils-${MACHINE}-dbg"
 
 PROVIDES += "virtual/blindscan-dvbs virtual/blindscan-dvbc"
 RPROVIDES:miraclebox-blindscan-dvbs-utils-${MACHINE} += "virtual-blindscan-dvbs"
