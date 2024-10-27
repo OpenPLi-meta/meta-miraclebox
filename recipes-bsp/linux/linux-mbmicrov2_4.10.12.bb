@@ -58,7 +58,7 @@ KERNEL_OUTPUT:mips = "vmlinux"
 KERNEL_IMAGETYPE:mips = "vmlinux"
 KERNEL_IMAGEDEST:mips = "boot"
 
-KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS=-Wno-attribute-alias"
+KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS+=-Wno-attribute-alias EXTRA_CFLAGS+=-Wno-address EXTRA_CFLAGS+=-Wno-array-bounds"
 
 FILES:${KERNEL_PACKAGE_NAME}-image:mips = "/${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}*"
 
