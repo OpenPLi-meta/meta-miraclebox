@@ -17,7 +17,7 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad
 RPROVIDES:${KERNEL_PACKAGE_NAME}-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES:${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
-SRC_URI += "http://source.mynonpublic.com/ceryon/ceryon-linux-${PV}.tgz \
+SRC_URI += "http://downloads.openpli.org/archive/miraclebox/ceryon-linux-${PV}.tgz \
 	file://defconfig \
 	file://dvb-usb-i2c_duplicate.patch \
 	file://0001-Support-TBS-USB-drivers-for-4.0.1-kernel.patch \

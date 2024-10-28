@@ -16,7 +16,7 @@ LIC_FILES_CHKSUM = "file://${WORKDIR}/linux-${PV}/COPYING;md5=d7810fab7487fb0aad
 
 RPROVIDES:kernel-image = "kernel-${KERNEL_IMAGETYPE}"
 
-SRC_URI += "http://source.mynonpublic.com/broadmedia/broadmedia-linux-${PV}-${SRC}.tar.xz \
+SRC_URI += "http://downloads.openpli.org/archive/miraclebox/broadmedia-linux-${PV}-${SRC}.tar.xz \
     file://defconfig \
     file://0001-regmap-add-regmap_write_bits.patch \
     file://0002-af9035-fix-device-order-in-ID-list.patch \

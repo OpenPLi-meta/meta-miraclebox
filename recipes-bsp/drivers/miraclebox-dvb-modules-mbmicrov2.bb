@@ -12,7 +12,7 @@ PR = "r0"
 SRC_URI[md5sum] = "cb8f72af4883443b65941f7b6a7cabb2"
 SRC_URI[sha256sum] = "ceba728a108e2697286721680e9edafdf9dc8ce34a598a8faec5d102530a96f8"
 
-SRC_URI = "http://source.mynonpublic.com/ceryon/ceryon-7005s-dvbdrive-${SRCDATE}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/miraclebox/ceryon-7005s-dvbdrive-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
