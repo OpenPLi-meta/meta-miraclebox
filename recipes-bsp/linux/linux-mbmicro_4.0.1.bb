@@ -19,7 +19,7 @@ PKG_${KERNEL_PACKAGE_NAME}-image = "kernel-image"
 RPROVIDES_${KERNEL_PACKAGE_NAME}-base = "kernel-${KERNEL_VERSION}"
 RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
-SRC_URI += "http://source.mynonpublic.com/ceryon/ceryon-linux-${PV}.tgz \
+SRC_URI += "http://downloads.openpli.org/archive/miraclebox/ceryon-linux-${PV}.tgz \
 	file://defconfig \
 	file://dvb-usb-i2c_duplicate.patch \
 	file://kernel-add-support-for-gcc6.patch \

@@ -13,7 +13,7 @@ SRC_URI[sha256sum] = "a965c6f2d8c8c766d872654dde0ef39d290a7c2c91c98f0faa44ae69d1
 PV = "${KV}+${SRCDATE}"
 PR = "r0"
 
-SRC_URI = "http://source.mynonpublic.com/broadmedia/twinplus-drivers-${KV}-${GCCREV}-${SRCDATE}.zip"
+SRC_URI = "http://downloads.openpli.org/archive/miraclebox/twinplus-drivers-${KV}-${GCCREV}-${SRCDATE}.zip"
 
 S = "${WORKDIR}"
 
