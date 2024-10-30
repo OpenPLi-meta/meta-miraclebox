@@ -53,7 +53,7 @@ KERNEL_OUTPUT = "vmlinux"
 KERNEL_IMAGETYPE = "vmlinux"
 KERNEL_IMAGEDEST = "tmp"
 
-KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS=-Wno-attribute-alias"
+KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS+=-Wno-attribute-alias EXTRA_CFLAGS+=-Wno-address"
 
 FILES:${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz"
 
