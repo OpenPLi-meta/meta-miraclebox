@@ -36,6 +36,7 @@ SRC_URI += "http://downloads.openpli.org/archive/miraclebox/ceryon-linux-${PV}-$
     file://v3-3-3-media-dvbsky-MyGica-T230C-support.patch \
     file://v3-3-4-media-dvbsky-MyGica-T230C-support.patch \
     file://v3-3-5-media-dvbsky-MyGica-T230C-support.patch \
+    file://fix-build-with-binutils-2.41.patch \
     "
 
 SRC_URI:append:arm = " \
@@ -44,6 +45,9 @@ SRC_URI:append:arm = " \
     file://blacklist_mmc0.patch \
     "
 
+SRC_URI:append:mipsel = " \
+    file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
+    "
 S = "${WORKDIR}/linux-${PV}"
 B = "${WORKDIR}/build"
 
@@ -56,7 +60,7 @@ KERNEL_OUTPUT:mips = "vmlinux"
 KERNEL_IMAGETYPE:mips = "vmlinux"
 KERNEL_IMAGEDEST:mips = "boot"
 
-KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS+=-Wno-attribute-alias EXTRA_CFLAGS+=-Wno-address EXTRA_CFLAGS+=-Wno-array-bounds"
+KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS=-Wno-attribute-alias"
 
 FILES:${KERNEL_PACKAGE_NAME}-image:mips = "/${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}*"
 

@@ -42,6 +42,8 @@ SRC_URI += "http://downloads.openpli.org/archive/miraclebox/broadmedia-linux-${P
     file://blindscan2.patch \
     file://0001-stv090x-optimized-TS-sync-control.patch \
     file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
+    file://fix-never-be-null_outside-array-bounds-gcc-12.patch \
+    file://fix-build-with-binutils-2.41.patch \
     "
 
 S = "${WORKDIR}/linux-${PV}"
@@ -53,7 +55,7 @@ KERNEL_OUTPUT = "vmlinux"
 KERNEL_IMAGETYPE = "vmlinux"
 KERNEL_IMAGEDEST = "tmp"
 
-KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS+=-Wno-attribute-alias EXTRA_CFLAGS+=-Wno-address"
+KERNEL_EXTRA_ARGS = "EXTRA_CFLAGS=-Wno-attribute-alias"
 
 FILES:${KERNEL_PACKAGE_NAME}-image = "/${KERNEL_IMAGEDEST}/${KERNEL_IMAGETYPE}.gz"
 
