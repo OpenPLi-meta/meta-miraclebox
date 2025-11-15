@@ -40,6 +40,7 @@ SRC_URI += "http://downloads.openpli.org/archive/miraclebox/ceryon-linux-${PV}-$
     file://v3-3-5-media-dvbsky-MyGica-T230C-support.patch \
 	file://kernel-add-support-for-gcc6.patch \
 	file://kernel-add-support-for-gcc7.patch \
+	file://noforce_correct_pointer_usage.patch \
     "
 
 SRC_URI_append_arm = " \
